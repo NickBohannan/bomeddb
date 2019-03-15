@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BOMED Database</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    </head>
+    <body>
+        <%- include('header') %>
+        <div class="row">
+            <%- include('sidebar') %>
+            <form method="POST" action="/add">
+                <input type="text" name="name" placeholder="name">
+                <input type="text" name="catalog" placeholder="catalog number">
+                <input type="text" name="serial" placeholder="serial number">
+                <input type="text" name="location" placeholder="location">
+                <input type="text" name="note" placeholder="notes">
+                <input type="submit" value="Create New Item">
+            </form>
+        </div>
+    </body>
+</html>

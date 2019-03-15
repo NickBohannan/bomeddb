@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>BOMED Database</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('header') %>
+    <div class="row">
+        <%- include('sidebar') %>
+        <div class="list-container">
+            <% items.forEach((item) => { %>
+            <% let url = "items/" + item.id %>
+            <div class="item-row">
+                <a class="text-box view" href=<%=url %>>Update</a>
+                <div class="text-box">
+                    <%= item.name %>
+                </div>
+                <div class="text-box">
+                    <%= item.catalog %>
+                </div>
+                <div class="text-box">
+                    <%= item.serial %>
+                </div>
+                <div class="text-box">
+                    <%= item.location %>
+                </div>
+                <div class="text-box note">
+                    <%= item.note %>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

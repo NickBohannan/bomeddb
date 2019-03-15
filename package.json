@@ -4,15 +4,22 @@
   "description": "DME database for family business",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "node start.js"
   },
   "author": "Nick Bohannan",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "pg": "^7.8.2",
-    "pg-hstore": "^2.3.2"
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
   }
 }

@@ -2,7 +2,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import path from 'path'
 
-import indexRouter from './routes/index'
+import routes from './routes/index'
 import Item from './models/item'
 
 const app = express()
@@ -10,9 +10,9 @@ const app = express()
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use(express.static(__dirname + '/public'))
-app.use('/', indexRouter)
+app.use('/', routes)
 
-const port = precess.env.PORT || 8080
+const port = process.env.PORT || 8080
 
 app.set('port', port)
 app.set('view engine', 'ejs')
