@@ -24,7 +24,15 @@ const Item = db.define('items', {
     },
     location: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
+    },
+    dateDeliver: {
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    datePickup: {
+        type: Sequelize.STRING,
+        allowNull: true
     },
     note: {
         type: Sequelize.STRING,

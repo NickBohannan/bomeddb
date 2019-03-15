@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BOMED Database</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    </head>
+    <body>
+        <%- include('header') %>
+        <div class="row">
+            <%- include('sidebar') %>
+            <form method="POST" action="/search">
+                <input type="text" name="search" placeholder="search here">
+                <input type="checkbox" name="name">
+                <input type="checkbox" name="catalog">
+                <input type="checkbox" name="serial">
+                <input type="checkbox" name="location">
+                <input type="checkbox" name="note">
+                <input type="checkbox" name="dateDelivery">
+                <input type="checkbox" name="datePickup">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </body>
+</html>
