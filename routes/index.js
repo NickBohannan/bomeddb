@@ -96,6 +96,8 @@ router.post('/search', (req, res) => {
     }
 })
 
+//router.post('/items/:id')
+
 router.get('/add', (req, res) => {
     res.render('addpage')
 })
@@ -116,7 +118,9 @@ router.post('/add', (req, res) => {
         catalog: req.body.catalog,
         serial: req.body.serial,
         location: req.body.location,
-        note: req.body.note
+        note: req.body.note,
+        dateDeliver: req.body.dateDeliver,
+        datePickup: req.body.datePickup
     }).then(() => {
         res.render('landingpage')
     }).catch((err) => {

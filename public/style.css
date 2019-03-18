@@ -2,7 +2,12 @@
     width: 100%;
     height: 100px;
     background-color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid #3A65BC;
+}
+
+.main-header img {
+    max-width: 125px;
+    margin: 10px;
 }
 
 a {
@@ -21,16 +26,29 @@ a {
     border-right: 4px solid #3A65BC;
 }
 
+.legend {
+    border-bottom: 2px solid #3A65BC;
+    border-top: 2px solid #3A65BC;
+}
+
 .text-box {
+    font-size: 12px;
     margin: auto;
     padding: 5px;
     width: 8rem;
     border-left: 1px solid #3A65BC;
 }
 
+.name {
+    width: 12rem;
+}
+
+.b {
+    font-weight: bold;
+}
+
 .view {
     background-color: #3A65BC;
-    font-size: 0.8rem;
     margin-left: 5px;
     margin-right: 5px;
     padding-right: 0px;
@@ -42,8 +60,17 @@ a {
     border-left: none;
 }
 
+.noview {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 3rem;
+    border-left: none;
+}
+
 .note {
-    width: 30rem;
+    width: 20rem;
 }
 
 .list-container {
