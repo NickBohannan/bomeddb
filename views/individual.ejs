@@ -14,7 +14,17 @@
     <%- include('header') %>
     <div class="row">
       <%- include('sidebar') %>
-      <div class="list-container">
+      <form method="POST" action="/items/<%= item.id %>">
+        <input type="text" name="name" value="<%= item.name %>">
+        <input type="text" name="catalog" value="<%= item.catalog %>">
+        <input type="text" name="serial" value="<%= item.serial %>">
+        <input type="text" name="location" value="<%= item.location %>">
+        <input type="text" name="note" value="<%= item.note %>">
+        <input type="text" name="dateDelivery" value="<%= item.dateDeliver %>">
+        <input type="text" name="datePickup" value="<%= item.datePickup %>">
+        <input type="submit" value="Update Item">
+    </form>
+      <!-- <div class="list-container">
         <div class="item-row legend">
           <div class="text-box noview"></div>
           <div class="text-box name">Name</div>
@@ -49,7 +59,7 @@
             <%= item.note %>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
